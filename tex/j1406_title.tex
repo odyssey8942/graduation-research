@@ -1,0 +1,39 @@
+\documentclass[10pt]{jsarticle}
+\makeatletter
+
+\def\@thesisA{平成30年度}
+\def\@thesisC{松江工業高等専門学校 情報工学科}
+\def\@thesisB{卒業研究論文}
+\def\department#1{\def\@department{#1}}
+\def\teacher#1{\def\@teacher{#1}}
+
+\pagestyle{empty}
+
+\def\@maketitle{
+\begin{center}
+\vspace*{40mm}
+{\LARGE \@thesisA \par}
+{\LARGE \@thesisC \par}
+{\LARGE \@thesisB \par}
+\vspace{10mm}
+{\LARGE\bf \@title \par}% 論文のタイトル部分
+\vspace{10mm}
+{\Large 学生番号　j1406 \par}% 自分
+{\Large 研究者　\@author \par}% 自分
+{\Large 指導教員　\@teacher \par}% 指導教員
+\vspace{10mm}
+{\Large \@date\par}% 提出年月日部分
+\end{center}
+\par\vskip 1.5em
+}
+
+\makeatother
+
+\title{RNNを用いた自動車走行時の車両状態予測に関する研究}
+\date{\today}
+\author{岩谷 燎}
+\teacher{加藤 聡}
+
+\begin{document}
+\maketitle
+\end{document}
